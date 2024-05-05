@@ -1,0 +1,122 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Ubuntu", sans-serif;
+  background: linear-gradient(to bottom, #f7f7f7, #eaeaea); /* Gradient from light gray to slightly darker gray */
+  color: #333333; /* Dark text color */
+}
+
+.container {
+  height: auto;
+  max-width: 80%;
+  padding: 10px;
+  text-align: center;
+  background-color: #ffffff; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  animation: fadeIn 0.5s ease; /* Fade in animation */
+}
+
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin-bottom: 10px;
+  animation: slideIn 0.5s ease; /* Slide in animation */
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: slideIn 0.5s ease; /* Slide in animation */
+}
+
+label,
+input {
+  display: block;
+}
+
+input {
+  padding: 10px;
+  width: 70%;
+  outline: none;
+  margin: 10px 0;
+  font-weight: bold;
+  border: none;
+  border-bottom: 2px solid #dddddd; /* Light gray border bottom */
+  text-align: center;
+  font-family: Ubuntu;
+  transition: border-bottom-color 0.3s ease; /* Smooth transition for border color */
+}
+
+input:focus {
+  border-bottom-color: #4F86F7; /* Blue border bottom when input is focused */
+}
+
+.output {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  animation: slideIn 0.5s ease; /* Slide in animation */
+}
+
+.output label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.output p {
+  border-bottom: 2px solid #dddddd; /* Light gray border bottom */
+  width: 70%;
+  margin: 20px 0;
+}
+
+button {
+  width: 70%;
+  height: auto;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  margin: 20px 0;
+  padding: 10px;
+  font-family: Ubuntu;
+  background-color: #4F86F7; /* Blue button background */
+  color: #ffffff; /* White text color */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  animation: fadeIn 0.5s ease; /* Fade in animation */
+}
+
+button:hover {
+  background-color: #3B5998; /* Darker blue button background on hover */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
